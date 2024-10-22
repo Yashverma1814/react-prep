@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
+import Navbar from '../contextcom/Navbar'
 
 const Hooks = () => {
 
@@ -25,6 +26,7 @@ const Hooks = () => {
         <h2>Age: {count}</h2>
         <button onClick={inc}>+</button>
         <button disabled={count===0} onClick={dec}>-</button>
+        <Navbar />
     </div>
   )
 }
